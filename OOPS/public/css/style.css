@@ -1,0 +1,330 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&family=Gugi&family=Jua&display=swap');
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+ul,
+ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+
+/* header */
+header {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+header .inner {
+	/* width: 1180px; */
+	height: 120px;
+	margin: 0px auto;
+	position: relative; /*자식 absolute 요소의 기준점 설정*/
+}
+header .inner #title  {
+	position: absolute;
+	left: 130px;
+	bottom: 50px;
+}
+header .inner #title li a{
+	font: bold 26px 'Gugi', cursive;
+	color: #000;
+}
+
+header .inner .util {
+	position: absolute;
+	top: 47px;
+	right: 120px;
+}
+header .inner .util li {
+	float: left;
+}
+header .inner .util li a {
+	display: block;
+	font: bold 14px 'Gowun Dodum', sans-serif;
+	color: rgb(99, 99, 99);
+	padding: 0px 25px;
+}
+header .inner #gnb {
+	position: absolute;
+	bottom: 0px;
+	left: 95px;
+}
+header .inner #gnb li {
+	float: left;
+
+}
+header .inner #gnb li a {
+	display: block; /*인라인 요소는 block설정하여 크기를 조절가능*/
+	font: bold 16px 'Gowun Dodum', sans-serif;
+	color: #555;
+	padding: 10px 35px;
+	transition: all 0.5s;
+}
+
+header .inner #gnb li a:hover {
+	color: rgb(248, 116, 22);
+}
+
+
+figure {
+	width: 80%;
+	left: 120px;
+	height: calc(100vh - 220px); /*전체 브라우저 높이에서 120px만큼 빼줌*/
+	background: rgb(0, 0, 0);
+	position: relative;
+	overflow: hidden;
+	padding-top: 100px;
+}
+figure video {
+	object-fit: cover; /*영상을 figure안쪽에 꽉 차도록 설정*/
+	width: 100%;
+	height: 100%;
+	opacity: 0.3;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+figure .inner {
+	width: 1100px;
+	margin: 0px auto;
+	position: relative;
+}
+figure .inner h1 {
+	font: 25px 'Gowun Dodum', sans-serif;
+	color: #fff;
+	margin-left: 40px;
+	margin-bottom: 30px;
+}
+figure .inner p {
+	font: BOLD 45px 'Gowun Dodum', sans-serif;
+	color: rgb(235, 235, 235);
+	margin-left: 640px;
+	margin-top: 60px;
+}
+figure .inner a {
+	display: block;
+	width: 180px;
+	height: 30px;
+	border: 1px solid #bbb;
+	font: bold 14px/30px 'Gowun Dodum', sans-serif;
+	color: #fff;
+	margin-left: 50px;
+	text-align: center;
+	letter-spacing: 1px;
+	transition: all 0.5s;
+}
+figure .inner a:hover {
+	background: #fff;
+	color: #555;
+}
+
+/* swiper */
+.swiper {
+	width: 85%;
+	padding: 30px 0px;
+}
+.swiper .mySwiper {
+	width: 1000px; 
+	margin: 0px auto;
+}
+.swiper .mySwiper h1 {
+	font: bold 17px 'Gowun Dodum', sans-serif;
+	color: #555;
+	margin-bottom: 15px;
+}
+
+.swiper .mySwiper .swiper-slide a{
+	font: bold 13px 'Gowun Dodum', sans-serif;
+	margin-left: 19%;
+	color: rgb(22, 22, 22);
+}
+
+.swiper .mySwiper .swiper-wrapper .swiper-slide {
+	width: 80px;
+	height: 80px;
+	background: rgb(255, 255, 255);
+
+}
+
+.swiper .mySwiper .swiper-wrapper img {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 3px;
+	width: 70px;
+	height: 70px;
+}
+.swiper .swiper-button-prev{
+	left: 1px;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+    width: 20px;
+    height: 20px;
+    outline: none;
+    color: rgb(34, 34, 34);
+    opacity: .7;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 가운데 배치 */
+    position: absolute;
+    top: 40px;
+	bottom: 5px;
+    margin: auto;
+}
+
+/* .swiper .swiper-button-prev:hover,
+.swiper .swiper-button-next:hover {
+    background-color: rgb(167, 167, 167);
+    color: rgb(255, 255, 255);
+} */
+
+
+/* section2*/
+section .inner2 {
+	width: 1000px; 
+	margin: 0px auto;
+	width: 85%;
+	padding: 20px 38px;
+}
+section .inner2 h1 {
+	font: bold 17px  'Gowun Dodum', sans-serif;
+	color: #555;
+	margin-bottom: 10px;
+}
+section .inner2 #word  {
+	margin-top: 40px;
+	margin-bottom: 80px;
+}
+section .inner2 #word li {
+	float: left;
+	margin-left: 3px;
+}
+section .inner2 #word li a {
+	font: bold 14px 'Gowun Dodum', sans-serif;
+	background-color: rgb(255, 178, 101);
+	border-radius: 15px;
+	padding: 19px 28px;
+	margin-right: 32px;
+	color: rgb(255, 255, 255);
+}
+
+
+/* section3*/
+section .inner3 {
+	width: 1200px;
+	margin: 0px auto;
+	width: 85%;
+	padding: 25px 38px;
+}
+section .inner3 h1 {
+	font: bold 17px  'Gowun Dodum', sans-serif;
+	color: #555;
+	margin-bottom: 20px;
+}
+section .inner3 .wrap {
+	width: 100%;
+}
+section .inner3 .wrap::after {
+	/*자식 요소인 article의 float해제*/
+	content: "";
+	display: block;
+	clear: both;
+}
+section .inner3 .wrap article {
+	width: 209px;
+	float: left;
+	margin-right: 30px;
+	margin-left: 10px;
+}
+/* section .inner3 .wrap article:last-child {
+	/*제일 오른쪽 마지막 요소만 여백제거
+	margin-right: 0px;
+} */
+
+section .inner3 .wrap article h2 a {
+	font: 14px 'Gowun Dodum', sans-serif;
+	color: rgb(22, 22, 22);
+	margin-left: 3%; 
+}
+section .inner3 .wrap article p {
+	font: 13.5px 'Gowun Dodum', sans-serif;
+	color: rgb(22, 22, 22);
+	margin-left: 3%; 
+	margin-bottom: 50px;
+}
+section .inner3 .wrap article .pic {
+	width: 100%;
+	height: 220px;
+	margin-bottom: 3px;
+	position: relative;
+	overflow: hidden;
+}
+section .inner3 .wrap article .pic img {
+	/* object-fit: cover;  */
+	width: 100%;
+	height: 100%;
+	border-radius: 9px;
+}
+
+
+/* footer */
+footer {
+	width: 100%;
+	background: rgb(255, 248, 240);
+	padding: 20px 0px;
+	border-top: 1px solid rgb(244, 244, 244);
+}
+footer .inner {
+	width: 1000px;
+	margin: 0px auto;
+}
+footer .inner .upper {
+	width: 100%;
+	border-bottom: 1px solid rgb(54, 54, 54);
+	padding-bottom: 20px;
+}
+footer .inner .upper::after {
+	/*상단 영역 float해제*/
+	content: "";
+	display: block;
+	clear: both;
+}
+footer .inner .upper h1 {
+	float: left;
+	font: 22px 'Gugi', cursive;
+	color: rgb(13, 13, 13);
+}
+footer .inner .upper ul {
+	float: right;
+}
+footer .inner .upper ul li {
+	float: left;
+	margin-left: 20px;
+}
+footer .inner .upper ul li a {
+	font: bold 14px "arial";
+	color: rgb(34, 34, 34);
+}
+footer .inner .lower {
+	width: 100%;
+	padding-top: 20px;
+}
+footer .inner .lower address {
+	width: 100%;
+	font: 12px "arial";
+	color: rgb(71, 71, 71);
+	margin-bottom: 20px;
+}
+footer .inner .lower p {
+	width: 100%;
+	font: 12px "arial";
+	color: rgb(59, 59, 59);
+}

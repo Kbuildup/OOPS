@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style3.css">
+    <!-- <script defer src="js/logsign.js"></script> -->
+
+</head>
+
+<body>
+    <section class="login-form">
+        <div class="title">
+            <li><a href="index.html">웁스 OOPS!</a></li>
+        </div>
+        
+        <form action="">
+            <div class = "int-area">
+                <input type ="text"  id="signInEmail" autocomplete="off" required>
+                <label for="signInEmail">이메일</label>
+            </div>
+            <div class = "int-area">
+                <input type ="text" id="signInPassword" autocomplete="off" required>
+                <label for="signInPassword">비밀번호</label>
+            </div>
+            <div class="btn-area">
+                <button id="signInBtn" type="button" oneclick="login();">로그인</button>
+            </div>
+        </form>
+        <div class = "caption">
+            <a href=""> 아이디 /비밀번호 찾기</a>
+            <a href="signup.html"> 회원가입</a>
+        </div>
+    </section>
+     
+   <!--
+       <script>
+        let signInEmail = document.querySelector('#signInEmail')
+        let signInPassword = document.querySelector('#signInPassword')
+        let signInbtn = document.querySelector('#signInbtn')
+
+        signInbtn.addEventListener('click', () => {
+            if(signInEmail.value == "") {
+                label = signInEmail.nextElementSibling
+                label.classList.add('warning')
+                setTimeout(() => {
+                    label.classList.remove('warning')
+                }, 1500)
+            } else if(signInPassword.value == "") {
+                label = signInPassword.nextElementSibling
+                label.classList.add('warning')
+                setTimeout(() => {
+                    label.classList.remove('warning')
+                }, 1500)
+            }
+        })
+    </script>
+     -->
+
+     <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+    
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+        apiKey: "AIzaSyCf5PtIZKgEvr0MXdO9ApLO3ORgW342Ddo",
+        authDomain: "oops-83965.firebaseapp.com",
+        projectId: "oops-83965",
+        storageBucket: "oops-83965.appspot.com",
+        messagingSenderId: "256807280838",
+        appId: "1:256807280838:web:e5fd06beed66de2727f7c7",
+        measurementId: "G-7QX51WQPHY"
+        };
+    
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+
+        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-auth.js";
+
+        const auth = getAuth();
+
+        document.getElementById('signInBtn').addEventListener('click',(event) => { 
+            event.preventDefault()
+            const email = document.getElementById('signInEmail').value
+            const password = document.getElementById('signInPassword').value
+            const auth = getAuth();
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    console.log(userCredential)
+                    location.href='index.html'
+                    // Signed in
+                    const user = userCredential.user;
+                    // ...
+                })
+                .catch((error) => {
+                    console.log('login fail')
+                    alert('아이디나 비밀번호가 일치하지 않습니다.');
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                });
+        })
+
+    </script>
+</body>
+
+</html>

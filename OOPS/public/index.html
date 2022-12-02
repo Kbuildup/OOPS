@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ppl site</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/c47106c6a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ie.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="inner">
+            <ul id="title">
+               <li><a href="index.html">OOPS!</a></li>     
+            </ul>
+        
+            <ul id="gnb">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="category.html">카테고리</a></li>
+                <li><a href="best.html">베스트</a></li>
+                <li><a href="drama.html">드라마관</a></li>
+                <li><a href="community.html">커뮤니티</a></li>
+            </ul>
+
+            <ul class="util">
+                <li><a href="#">고객센터</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="signup.html">회원가입</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <figure>
+        <video src="img/visual.mp4" autoplay muted loop></video>
+        <div class="inner">
+            <h1>저 제품 옆에 저건 뭐지?<br>
+                이거 어디서 봤더라?</h1>
+            <p> OUT OF PPLS!</p>
+            <!-- <a href="#">더 알아보기</a> -->
+        </div>
+    </figure>
+
+     
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="mySwiper">
+                <h1>카테고리</h1>
+                <div class="swiper-wrapper">
+                <div class="swiper-slide"> <img src="img/furniture.png"><a href="category.html">가구</a></div>
+                <div class="swiper-slide"> <img src="img/fabric.png"><a href="category.html">패브릭</a></div>
+                <div class="swiper-slide"> <img src="img/cosmetic.png"><a href="category.html">뷰티</a></div>
+                <div class="swiper-slide"> <img src="img/electronic.png"><a href="category.html">디지털</a></div>
+                <div class="swiper-slide"> <img src="img/interior.png"><a href="category.html">인테리어</a></div>
+                <div class="swiper-slide"> <img src="img/food.png"><a href="category.html">푸드</a></div>
+                <div class="swiper-slide"> <img src="img/kitchen.png"><a href="category.html">주방용품</a></div>
+                <div class="swiper-slide"> <img src="img/pet.png"><a href="category.html">반려동물</a></div>
+                <div class="swiper-slide"> <img src="img/camping.png"><a href="category.html">캠핑용품</a></div>
+                <div class="swiper-slide"> <img src="img/weightlifting.png"><a href="category.html">실내운동</a></div>
+                <div class="swiper-slide"> <img src="img/planting.png"><a href="category.html">식물</a></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>    
+        </div>    
+
+       <!-- Initialize Swiper -->
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+          slidesPerView: 8,
+          spaceBetween: 40,
+          slidesPerGroup: 8,
+        //   loop: true,
+          loopFillGroupWithBlank: true,
+        //   pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        //   },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+    </script>
+
+    <section>
+        <div class="inner2">
+            <h1>인기 KEYWORD</h1>
+                <ul id="word">
+                    <li><a href="#">#공기청정기</a></li>
+                    <li><a href="#">#런닝맨</a></li>
+                    <li><a href="#">#유미의 세포들2</a></li>
+                    <li><a href="#">#음식물처리기</a></li>
+                    <li><a href="#">#서른, 아홉</a></li>
+                    <li><a href="ppldrama.html">#그 해 우리는</a></li>
+                </ul>
+        </div>
+    </section>
+    <section>
+        <div class="inner3">
+            <h1>인기 PPL</h1>
+            <div class="wrap">
+                <article>
+                    <div class="pic">
+                        <img src="img/p1.jpg" alt="1번째 콘텐츠 이미지">
+                    </div>
+                    <h2><a href="#">[이상한 변호사 우영우]</a></h2>
+                    <p>KAHI 멀티밤<br>37,800</p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/p15.jpg" alt="2번째 콘텐츠 이미지">
+                    </div>
+                    <h2><a href="#">[지구오락실]</a></h2>
+                    <p>링티 하루 한 포<br>30,000</p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/p3.jpg" alt="3번째 콘텐츠 이미지">
+                    </div>
+                    <h2><a href="#">[유미의 세포들2]</a></h2>
+                    <p>SAMSUNG 갤럭시Z플립4<br>1,353,000</p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/p4.jpg" alt="4번째 콘텐츠 이미지">
+                    </div>
+                    <h2><a href="#">[나혼자 산다]</a></h2>
+                    <p>누하스 뉴클래식 안마의자<br>2,350,000</p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/p17.jpg" alt="1번째 콘텐츠 이미지">
+                    </div>
+                    <h2><a href="#">[그 해 우리는]</a></h2>
+                    <p>BOTTEGAVENETA 카세트 버킷백<br>1,565,000</p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/p19.jpg" alt="2번째 콘텐츠 이미지">
+                    </div>
+                    <h2><a href="#">[윤식당2]</a></h2>
+                    <p>ODENSE 아틀리에 6인조 디너세트<br>333,000</p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/p6.jpg" alt="">
+                    </div>
+                    <h2><a href="#">[김비서가 왜 그럴까]</a></h2>
+                    <p>MONTBLAC 스타레거시<br>3,320,000</p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/p7.jpg" alt="4번째 콘텐츠 이미지">
+                    </div>
+                    <h2><a href="#">[그 해 우리는]</a></h2>
+                    <p>마세라티 과트로포르테<br></p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/p20.jpg" alt="">
+                    </div>
+                    <h2><a href="#">[START-UP 스타트업]</a></h2>
+                    <p>DESKER 모션데스크<br>600,000</p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/p10.jpg" alt="1번째 콘텐츠 이미지">
+                    </div>
+                    <h2><a href="#">[나 혼자 산다]</a></h2>
+                    <p>삼첩분식<br></p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/p16.jpg" alt="2번째 콘텐츠 이미지">
+                    </div>
+                    <h2><a href="#">[이상한 변호사 우영우]</a></h2>
+                    <p>젠하이어 무선 헤드셋<br>449,000</p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/p11.jpg" alt="3번째 콘텐츠 이미지">
+                    </div>
+                    <h2><a href="#">[슬기로운 의사생활2]</a></h2>
+                    <p>에그 드랍<br></p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/dramappl1.png" alt="4번째 콘텐츠 이미지">
+                    </div>
+                    <h2><a href="#">[그 해 우리는]</a></h2>
+                    <p>SWAROVSKI UNA 스터드 이어링<br> 245,000</p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/dramappl2.png" alt="4번째 콘텐츠 이미지">
+                    </div>
+                    <h2><a href="#">[그 해 우리는]</a></h2>
+                    <p>BENS 노만 3.5인 패브릭 소파 <br> 1,376,000</p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/dramappl4.png" alt="4번째 콘텐츠 이미지">
+                    </div>
+                    <h2><a href="#">[그 해 우리는]</a></h2>
+                    <p>생활맥주<br></p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/dramappl3.png" alt="4번째 콘텐츠 이미지">
+                    </div>
+                    <h2><a href="#">[그 해 우리는]</a></h2>
+                    <p>디오션라이트하우스 캔디바 스탠드 조명<br> 130,000</p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/dramappl5.png" alt="4번째 콘텐츠 이미지">
+                    </div>
+                    <h2><a href="#">[그 해 우리는]</a></h2>
+                    <p>SWAROVSKI SIGNUM 펜던드<br> 175,000</p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/dramappl6.png">
+                    </div>
+                    <h2><a href="#">[그 해 우리는]</a></h2>
+                    <p>BENS 제벨 장식장<br> 270,000</p>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="img/dramappl7.png" >
+                    </div>
+                    <h2><a href="#">[그 해 우리는]</a></h2>
+                    <p>SWAROVSKI SIGNUM 스터드 이어링<br> 195,000</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="inner">
+            <div class="upper">
+                <h1>OOPS! / K</h1>
+                <ul>
+                    <li><a href="#">Policy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Family Site</a></li>
+                </ul>
+            </div>
+
+            <div class="lower">
+                <address>
+                    FING YOUR PPL <BR>
+                    TEL : 031-111-1234 C.P : 010-9458-6983
+                </address>
+                <p>
+                    2022 K &copy; copyright all right reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+</body>
+
+</html>
