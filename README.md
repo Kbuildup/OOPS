@@ -1,11 +1,5 @@
 ## OOPS (OUT OF PPLS)
 
-<p align="center">
-  <br>
-  <img src="./readme/image/main.png">
-  <br>
-</p>
-
 ### OOPS 소개
 
 <p align="justify">
