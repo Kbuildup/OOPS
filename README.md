@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  <img src="./images/common/logo-sample.jpeg">
+  <img src="./readme/image/main.png">
   <br>
 </p>
 
@@ -28,7 +28,7 @@
 #### MAIN
 <p align="center">
   <br>
-  <img src="./images/common/logo-sample.jpeg">
+  <img src="./readme/image/main.png">
   <br>
 </p>
 <br>
@@ -36,7 +36,8 @@
 #### CATEGORY
 <p align="center">
   <br>
-  <img src="./images/common/logo-sample.jpeg">
+  <img src="./readme/image/category.png" width ="70%" height="60%">
+  <img src="./readme/image/more2.png" width ="70%" height="60%">
   <br>
 </p>
 <br>
@@ -44,7 +45,8 @@
 #### LOGIN & SIGN UP
 <p align="center">
   <br>
-  <img src="./images/common/logo-sample.jpeg">
+  <img src="./readme/image/login.png"width ="70%" height="60%">
+  <img src="./readme/image/sign up.png" width ="70%" height="60%">
   <br>
 </p>
 <br>
@@ -52,7 +54,8 @@
 #### BEST PPL
 <p align="center">
   <br>
-  <img src="./images/common/logo-sample.jpeg">
+  <img src="./readme/image/best.png" width ="70%" height="60%">
+  <img src="./readme/image/more.png" width ="70%" height="60%">
   <br>
 </p>
 <br>
@@ -60,7 +63,7 @@
 #### 드라마관
 <p align="center">
   <br>
-  <img src="./images/common/logo-sample.jpeg">
+  <img src="./readme/image/drama.png" width ="70%" height="60%">
   <br>
 </p>
 <br>
@@ -68,7 +71,7 @@
 #### COMMUNITY
 <p align="center">
   <br>
-  <img src="./images/common/logo-sample.jpeg">
+  <img src="./readme/image/community.png" width ="70%" height="60%">
   <br>
 </p>
 <br>
