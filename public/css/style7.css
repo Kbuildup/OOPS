@@ -1,0 +1,333 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&family=Gugi&family=Jua&display=swap');
+/* VARIABLES CSS */
+:root {
+    --nav--width: 35px;
+
+    /* Colores */
+    --first-color: #ffaf2d;
+    --bg-color: #ffffff;
+    --sub-color: #303030;
+    --white-color: rgb(0, 0, 0);
+
+    /* Fuente y tipografia
+    --body-font: 15px 'Gowun Dodum', sans-serif;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem; */
+
+    /* z index */
+    --z-fixed: 100;
+}
+
+/* BASE */
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    transition: .5s;
+} 
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* l NAV */
+.l-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    background-color: var(--bg-color);
+    color: var(--white-color);
+    padding: 32px 8px 0px;
+    transition: .5s;
+    z-index: var(--z-fixed);
+}
+/* NAV */
+.nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.nav__brand {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav__toggle {
+    font-size: 25px;
+    padding: 9px;
+    cursor: pointer;
+}
+.nav__logo {
+    color: var(--white-color);
+    font: bold 17px 'Gowun Dodum', sans-serif;
+}
+.nav__link {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: 15px;
+    padding: 7px;
+    color: var(--white-color);
+    border-radius: 12px;
+    margin-bottom: 1px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.nav__link:hover {
+    background-color: var(--first-color);
+}
+
+.nav__icon {
+	width: 31px;
+	height: 31px;
+}
+.nav_name {
+    font: 15px 'Gowun Dodum', sans-serif;
+}
+/* Expander menu */
+.expander {
+    width: calc(var(--nav--width) + 9.25rem);
+}
+
+/* Add padding body */
+.body-pd {
+    padding: 12px 95px;
+} 
+
+/* Active links menu */
+.active {
+    background-color: var(--first-color);
+}
+
+/* COLLAPSE */
+.collapse {
+    grid-template-columns: 30px max-content 9fr;
+}
+
+.collapse__link {
+    justify-self: flex-end;
+    transition: .5;
+}
+
+.collapse__menu {
+    display: none;
+    padding: 0px 50px;
+}
+
+.collapse__sublink {
+    color: var(--sub-color);
+    font: 14px 'Gowun Dodum', sans-serif;
+}
+
+.collapse__sublink:hover {
+    color: var(--white-color);
+}
+/* Show collapse */
+.showCollapse {
+    display: block;
+}
+/* Rotate icon */
+.rotate {
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
+/* header */
+header {
+	width: 110%;
+	border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+header .inner {
+
+	height: 120px;
+	margin: 0px auto;
+	position: relative; /*자식 absolute 요소의 기준점 설정*/
+}
+header .inner #title  {
+	position: absolute;
+	left: 115px;
+	bottom: 60px;
+}
+header .inner #title li a{
+	font: BOLD 26px 'Gugi', cursive;
+	color: #000;
+}
+
+header .inner .util {
+	position: absolute;
+	top: 38px;
+	right: 140px;
+}
+header .inner .util li {
+	float: left;
+}
+header .inner .util li a {
+	display: block;
+	font: bold 14px 'Gowun Dodum', sans-serif;
+	color: rgb(99, 99, 99);
+	padding: 0px 25px;
+}
+header .inner #gnb {
+	position: absolute;
+	bottom: 0px;
+	left: 80px;
+}
+header .inner #gnb li {
+	float: left;
+
+}
+header .inner #gnb li a {
+	display: block; /*인라인 요소는 block설정하여 크기를 조절가능*/
+	font: bold 16px 'Gowun Dodum', sans-serif;
+	color: #555;
+	padding: 10px 35px;
+	transition: all 0.5s;
+}
+
+header .inner #gnb li a:hover {
+	color: rgb(248, 116, 22);
+}
+
+/* swiper */
+.swiper {
+	width: 100%;
+	padding: 20px 135px;
+    overflow: hidden;
+}
+.swiper .mySwiper {
+	width: 105%;
+	overflow: hidden;
+}
+.swiper .mySwiper h1 {
+	font: bold 17px 'Gowun Dodum', sans-serif;
+	color: #555;
+	margin-bottom: 15px;
+
+}
+
+.swiper .mySwiper .swiper-slide a{
+	font: 13px 'Gowun Dodum', sans-serif;
+	color: rgb(22, 22, 22);
+	position: absolute;
+	left: 6px; 
+}
+
+.swiper .mySwiper .swiper-wrapper .swiper-slide {
+	height: 300px;
+    width: 70px;
+	background: rgb(255, 255, 255);
+
+}
+
+.swiper .mySwiper .swiper-wrapper img {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 10px;
+	margin-left: 8px;
+	width: 200px;
+	height: 200px;
+	border-radius: 7px;
+}
+.swiper .swiper-button-prev{
+	left: 70px;
+}
+/* .swiper .swiper-button-next{
+	left: 1050px;
+} */
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+    width: 60px;
+    height: 40px;
+    outline: none;
+    color: rgb(34, 34, 34);
+    opacity: .7;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 가운데 배치 */
+    position: absolute;
+    top: 170px;
+    margin: auto;
+}
+
+/* .swiper .swiper-button-prev:hover,
+.swiper .swiper-button-next:hover {
+    background-color: rgb(167, 167, 167);
+    color: rgb(255, 255, 255);
+} */
+
+
+/* section3*/
+section .inner3 {
+	width: 100%;
+	margin: 0px auto;
+	position: relative; /*자식 absolute 요소의 기준점 설정*/
+	padding:0px 140px;
+}
+
+section .inner3 h1 {
+	font: bold 17px  'Gowun Dodum', sans-serif;
+	color: #555;
+	margin-bottom: 0px;
+}
+section .inner3 .wrap {
+	width: 120%;
+}
+section .inner3 .wrap::after {
+	/*자식 요소인 article의 float해제*/
+	content: "";
+	display: block;
+	clear: both;
+}
+section .inner3 .wrap article {
+	width: 340px;
+    float: left;
+	margin-right: 8%;
+	margin-left: 6%;
+}
+
+/* section .inner3 .wrap article:last-child {
+	margin-right: 0px;
+}  */
+/* x */
+section .inner3 .wrap article a {
+	font: 14px 'Gowun Dodum', sans-serif;
+	color: rgb(53, 53, 53);
+	margin-bottom: 10px;
+
+}
+
+section .inner3 .wrap article .pic {
+	width: 100%;
+	height: 230px;
+	background: rgb(165, 165, 165);
+    margin-top: 30px;
+	margin-bottom: 10px;
+	position: relative;
+	overflow: hidden;
+
+}
+section .inner3 .wrap article .pic video {
+	object-fit: cover; /*pic프레임안에 이미지 꽉 채움*/
+	width: 100%;
+	height: 100%;
+}

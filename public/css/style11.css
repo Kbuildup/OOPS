@@ -1,0 +1,433 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Gowun+Dodum&family=Gugi&family=Jua&display=swap');
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+ul,
+ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+
+/* header */
+header {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+header .inner {
+	/* width: 1180px; */
+	height: 120px;
+	margin: 0px auto;
+	position: relative; /*자식 absolute 요소의 기준점 설정*/
+}
+header .inner #title  {
+	position: absolute;
+	left: 130px;
+	bottom: 50px;
+}
+header .inner #title li a{
+	font: bold 26px 'Gugi', cursive;
+	color: #000;
+}
+
+header .inner .util {
+	position: absolute;
+	top: 47px;
+	right: 120px;
+}
+header .inner .util li {
+	float: left;
+}
+header .inner .util li a {
+	display: block;
+	font: bold 14px 'Gowun Dodum', sans-serif;
+	color: rgb(99, 99, 99);
+	padding: 0px 25px;
+}
+header .inner #gnb {
+	position: absolute;
+	bottom: 0px;
+	left: 95px;
+}
+header .inner #gnb li {
+	float: left;
+
+}
+header .inner #gnb li a {
+	display: block; /*인라인 요소는 block설정하여 크기를 조절가능*/
+	font: bold 16px 'Gowun Dodum', sans-serif;
+	color: #555;
+	padding: 10px 35px;
+	transition: all 0.5s;
+}
+
+header .inner #gnb li a:hover {
+	color: rgb(248, 116, 22);
+}
+
+
+section .inner1 h1{
+	font: bold 40px 'Gowun Dodum', sans-serif;
+	color: rgb(34, 34, 34);
+	position: relative;
+	top: 55px;
+	left: 160px;
+}
+section .inner1 li{
+	float: left;
+	font: 15px 'Gowun Dodum', sans-serif;
+	color: rgb(101, 101, 101);
+	padding: 5px 15px;
+	position: relative;
+	margin-left: 20px;
+	top: 65px;
+	left: 140px;
+	border: 1.5px rgb(255, 188, 95) solid;
+	border-radius: 10px;
+	list-style: none;
+}
+section .inner1 h2{
+	font: 15px 'Gowun Dodum', sans-serif;
+	color: rgb(87, 87, 87);
+	position: relative;
+	top: 118px;
+	right: 170px;
+}
+section .inner1 .explain {
+	width: 41%;
+	position: relative;
+	top: 134px;
+	left: 168px;
+}
+section .explain h3{
+	font: bold 16px 'Gowun Dodum', sans-serif;
+	color: rgb(60, 60, 60);
+	position: relative;
+}
+section .inner1 a{
+	font: bold 19px 'Gowun Dodum', sans-serif;
+	color: rgb(52, 52, 52);
+	position: relative;
+	top: 230px;
+	transition: .5s;
+	opacity: 0.9;
+	left: 205px;
+}
+/* section .inner1 a:hover{
+	font: bold 19px 'Gowun Dodum', sans-serif;
+	color: rgb(252, 144, 28);
+	position: relative;
+	top: 250px;
+	left: 160px;
+} */
+section img{
+	/* object-fit: cover;  */
+	width: 29px;
+	height: 29px;
+	position: absolute;
+	transition: .5s;
+	top: 498px;
+	left: 170px;
+	}
+
+figure {
+	width: 25%;
+	left: 770px;
+	top: -140px;
+	height: calc(100vh - 195px); /*전체 브라우저 높이에서 120px만큼 빼줌*/
+	background: rgb(0, 0, 0);
+	position: relative;
+	overflow: hidden;
+}
+figure img {
+	/* object-fit: cover;  */
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+
+/* swiper */
+.swiper {
+	width: 100%;
+	padding: 20px 135px;
+    overflow: hidden;
+	position: absolute;
+	top: 600px;
+}
+.swiper .mySwiper {
+	width: 105%;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.swiper .mySwiper h1 {
+	font: bold 18px 'Gowun Dodum', sans-serif;
+	color: #555;
+	margin-bottom: 10px;
+
+}
+
+.swiper .mySwiper .swiper-slide a{
+	font: 14px 'Gowun Dodum', sans-serif;
+	color: rgb(22, 22, 22);
+	position: absolute;
+	letter-spacing: 0.5px;
+	left: 15px; 
+}
+
+.swiper .mySwiper .swiper-wrapper .swiper-slide {
+	width: 100px;
+	height: 350px;
+	background: rgb(255, 255, 255);
+
+}
+
+.swiper .mySwiper .swiper-wrapper img {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	width: 220px;
+	height: 240px;
+	border-radius: 7px;
+
+}
+.swiper .swiper-button-prev{
+	left: 60px;
+}
+/* .swiper .swiper-button-next{
+	left: 1050px;
+} */
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+    width: 60px;
+    height: 40px;
+    outline: none;
+    color: rgb(34, 34, 34);
+    opacity: .7;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 가운데 배치 */
+    position: absolute;
+    top: 160px;
+
+    margin: auto;
+}
+
+/* .swiper .swiper-button-prev:hover,
+.swiper .swiper-button-next:hover {
+    background-color: rgb(167, 167, 167);
+    color: rgb(255, 255, 255);
+} */
+
+.swiper2 {
+	width: 100%;
+	padding: 20px 135px;
+    overflow: hidden;
+	position: absolute;
+	top: 600px;
+}
+.swiper2 .mySwiper2 {
+	width: 105%;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.swiper2 .mySwiper2 h1 {
+	font: bold 18px 'Gowun Dodum', sans-serif;
+	color: #555;
+	margin-bottom: 10px;
+
+}
+
+.swiper2 .mySwiper2 .swiper-slide2 a{
+	font: 14px 'Gowun Dodum', sans-serif;
+	color: rgb(22, 22, 22);
+	position: absolute;
+	letter-spacing: 0.5px;
+	left: 15px; 
+}
+
+.swiper2 .mySwiper2 .swiper-wrapper2 .swiper-slide2 {
+	width: 100px;
+	height: 350px;
+	background: rgb(255, 255, 255);
+
+}
+
+.swiper2 .mySwiper2 .swiper-wrapper2 img {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	width: 220px;
+	height: 240px;
+	border-radius: 7px;
+
+}
+.swiper2 .swiper-button-prev2{
+	left: 60px;
+}
+/* .swiper .swiper-button-next{
+	left: 1050px;
+} */
+
+.swiper2 .swiper-button-next2,
+.swiper2 .swiper-button-prev2 {
+    width: 60px;
+    height: 40px;
+    outline: none;
+    color: rgb(34, 34, 34);
+    opacity: .7;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 가운데 배치 */
+    position: absolute;
+    top: 160px;
+
+    margin: auto;
+}
+
+/* section2*/
+.inner2 {
+	width: 100%;
+	padding: 20px 135px;
+    overflow: hidden;
+	position: absolute;
+	top: 1000px;
+}
+.inner2 h1 {
+	font: bold 18px  'Gowun Dodum', sans-serif;
+	color: #555;
+	margin-bottom: 10px;
+}
+.inner2 .swiper2 .mySwiper2 {
+	width: 105%;
+	margin: 0px auto;
+	overflow: hidden;
+}
+
+.inner2 .swiper2 .mySwiper2 .swiper-slide2 a{
+	font: 14px 'Gowun Dodum', sans-serif;
+	color: rgb(22, 22, 22);
+	position: absolute;
+	letter-spacing: 0.5px;
+	left: 15px; 
+}
+
+.inner2 .swiper2 .mySwiper2 .swiper-wrapper2 .swiper-slide2 {
+	width: 100px;
+	height: 350px;
+	background: rgb(255, 255, 255);
+
+}
+
+.inner2 .swiper2 .mySwiper2 .swiper-wrapper2 img {
+	display: block;
+	overflow: hidden;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	width: 220px;
+	height: 240px;
+	border-radius: 7px;
+
+}
+.inner2 .swiper2 .swiper-button-prev2{
+	left: 60px;
+}
+/* .swiper .swiper-button-next{
+	left: 1050px;
+} */
+
+.inner2 .swiper2 .swiper-button-next2,
+.swiper2 .swiper-button-prev2 {
+    width: 60px;
+    height: 40px;
+    outline: none;
+    color: rgb(34, 34, 34);
+    opacity: .7;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 가운데 배치 */
+    position: absolute;
+    top: 160px;
+
+    margin: auto;
+}
+
+
+
+/* section3*/
+section .inner3 {
+	width: 1200px;
+	margin: 0px auto;
+	width: 85%;
+	padding: 25px 38px;
+}
+section .inner3 h1 {
+	font: bold 17px  'Gowun Dodum', sans-serif;
+	color: #555;
+	margin-bottom: 20px;
+}
+section .inner3 .wrap {
+	width: 100%;
+}
+section .inner3 .wrap::after {
+	/*자식 요소인 article의 float해제*/
+	content: "";
+	display: block;
+	clear: both;
+}
+section .inner3 .wrap article {
+	width: 209px;
+	float: left;
+	margin-right: 30px;
+	margin-left: 10px;
+}
+section .inner3 .wrap article:last-child {
+	/*제일 오른쪽 마지막 요소만 여백제거*/
+	margin-right: 0px;
+}
+section .inner3 .wrap article h2 {
+
+	margin-left: 40%;
+}
+section .inner3 .wrap article h2 a {
+	font: bold 15px 'Gowun Dodum', sans-serif;
+	color: rgb(32, 32, 32);
+
+	
+}
+section .inner3 .wrap article p {
+	font: 15px 'Gowun Dodum', sans-serif;
+	color: rgb(53, 53, 53);
+	margin-bottom: 40px;
+	margin-left: 40%;
+}
+section .inner3 .wrap article .pic {
+	width: 100%;
+	height: 220px;
+	background: rgb(165, 165, 165);
+	margin-bottom: 3px;
+	position: relative;
+	overflow: hidden;
+}
+section .inner3 .wrap article .pic img {
+	/* object-fit: cover;  */
+	width: 100%;
+	height: 100%;
+}
+

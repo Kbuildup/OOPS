@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>writereview</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style8.css">
+    <!-- <script defer src="js/logsign.js"></script> -->
+
+</head>
+
+<body>    
+    <header>
+        <div class="title">
+            <li><a href="index.html">OOPS!</a></li>
+        </div>
+    </header>
+
+    <section class="review_form"> 
+        <div class = "caption">
+            <img class="guide" src="img/tour-guide.png"><a>도란도란 작성 가이드</a>
+            <li>솔직한 리뷰로 도란도란해주세요!</li>
+            <li>정확한 브랜드명과 상품명을 기입해주세요!</li>
+            <li>상품을 과하게 비방하거나 욕설이 포함된 도란도란은 자제부탁드립니다.</li>
+            <li>상품과 관련없는 리뷰는 숨김 및 삭제될 수 있습니다.</li>
+        </div>
+        <div class = "int-area">
+            <label for="brand">BRAND</label>
+            <input type ="text"  id="brand" autocomplete="off" placeholder="브랜드명을 입력해주세요" >
+        </div>
+        <div class = "int-area">
+            <label for="name">상품명</label>
+            <input type ="text" id="name" autocomplete="off" placeholder="정확한 상품명을 입력해주세요" >
+        </div>
+        <div class = "int-area">
+            <label for="photo">Photo</label>
+            <input type ="file" id="photo" autocomplete="off" placeholder="상품과 일치하는 사진을 첨부해주세요!" >
+        </div>
+        <div class = "int-area">
+            <label for="review">리뷰</label>
+            <input type ="text" id="review" autocomplete="off" placeholder="솔직한 한 줄평을 남겨주세요!" >
+        </div>
+        <div class="btn-area">
+            <button id="write" type="button">도란도란 완료!</button>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCf5PtIZKgEvr0MXdO9ApLO3ORgW342Ddo",
+            authDomain: "oops-83965.firebaseapp.com",
+            databaseURL: "https://oops-83965-default-rtdb.firebaseio.com",
+            projectId: "oops-83965",
+            storageBucket: "oops-83965.appspot.com",
+            messagingSenderId: "256807280838",
+            appId: "1:256807280838:web:e5fd06beed66de2727f7c7",
+            measurementId: "G-7QX51WQPHY"
+        };
+        // Initialize Firebase
+        // const app = initializeApp(firebaseConfig);
+        // const analytics = getAnalytics(app);
+            firebase.initializeApp(firebaseConfig);
+    </script>	
+
+    <script>
+        const db = firebase.firestore();
+        const storage = firebase.storage();
+
+        $('#write').click(function(){
+            var file = document.querySelector('#photo').files[0];
+            var storageRef = storage.ref();
+            var path = storageRef.child('image/' + file.name);
+            var work = path.put(file);
+
+            var data = {
+                brand : $('#brand').val(),
+                name : $('#name').val(),
+                review : $('#review').val(),
+            }
+            db.collection('reviews').add(data).then((result)=>{
+                console.log(result);
+                window.location.assign('writereview.html');
+            }).catch((err)=>{
+                console.log(err)
+            })
+        })
+    </script>
+        
+     
+</body>
+
+</html>
