@@ -30,8 +30,8 @@
 #### CATEGORY
 <p align="center">
   <br>
-  <img src="./readme/image/category.png" width ="70%" height="60%">
-  <img src="./readme/image/more2.png" width ="70%" height="60%">
+  <img src="./readme/image/category.png" width ="80%" height="70%">
+  <img src="./readme/image/more2.png" width ="80%" height="70%">
   <br>
 </p>
 <br>
