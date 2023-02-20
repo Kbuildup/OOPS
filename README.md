@@ -19,10 +19,27 @@
 
 ### 구현 기능
 
-#### MAIN
+#### COMMUNITY
 <p align="center">
   <br>
-  <img src="./readme/image/main.png" width ="75%" height="65%" >
+  <img src="./readme/image/community.png" width ="75%" height="65%">
+  <br>
+</p>
+<br>
+
+#### 드라마관
+<p align="center">
+  <br>
+  <img src="./readme/image/drama.png" width ="75%" height="65%">
+  <br>
+</p>
+<br>
+
+#### BEST PPL
+<p align="center">
+  <br>
+  <img src="./readme/image/best.png" width ="75%" height="65%">
+  <img src="./readme/image/more.png" width ="75%" height="65%">
   <br>
 </p>
 <br>
@@ -45,30 +62,14 @@
 </p>
 <br>
 
-#### BEST PPL
+#### MAIN
 <p align="center">
   <br>
-  <img src="./readme/image/best.png" width ="75%" height="65%">
-  <img src="./readme/image/more.png" width ="75%" height="65%">
+  <img src="./readme/image/main.png" width ="75%" height="65%" >
   <br>
 </p>
 <br>
 
-#### 드라마관
-<p align="center">
-  <br>
-  <img src="./readme/image/drama.png" width ="75%" height="65%">
-  <br>
-</p>
-<br>
-
-#### COMMUNITY
-<p align="center">
-  <br>
-  <img src="./readme/image/community.png" width ="75%" height="65%">
-  <br>
-</p>
-<br>
 
 ### 배운 점 & 아쉬운 점
 <p align="justify">
